@@ -1,0 +1,102 @@
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50rem;
+}
+
+.Intro {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.White {
+  width: 50rem;
+  height: 5rem;
+  color: #ffffff;
+}
+
+.Blue {
+  width: 50rem;
+  height: 5rem;
+  background: linear-gradient(270deg, #a5d9ff 7.6%, #7399fb 94.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Description {
+  width: 40rem;
+  height: 5rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #b0b0b0;
+  margin: 1rem;
+}
+
+.Try {
+  width: 10rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #2104d8;
+  border-radius: 10px;
+}
+
+.Try > h1 {
+  width: 10rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .Home {
+    width: 10rem;
+    height: 40rem;
+  }
+
+  .Intro {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+  }
+
+  .White {
+    width: 30rem;
+    height: 2.25rem;
+  }
+
+  .Blue {
+    width: 30rem;
+    height: 7rem;
+    line-height: 3rem;
+  }
+
+  .Description {
+    width: 18rem;
+    height: 5rem;
+    font-size: 14px;
+
+    margin: 1rem;
+  }
+}

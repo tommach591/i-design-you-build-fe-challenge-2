@@ -1,0 +1,129 @@
+.Header {
+  width: 110rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title {
+  width: 9rem;
+  height: 3rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Tabs {
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25rem;
+  margin-left: 25rem;
+}
+
+.Tabs > h1 {
+  width: 6rem;
+  height: 3rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+
+  margin: 1rem;
+}
+
+.DashboardButton {
+  background: #242424;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 9rem;
+}
+
+.DashboardButton > h1 {
+  width: 6rem;
+  height: 3rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .Title {
+    width: 8rem;
+    font-size: 30px;
+    margin-right: 6.5rem;
+  }
+
+  .Burger {
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(-1);
+    margin-left: 6.5rem;
+  }
+
+  .Line {
+    border: 1px solid white;
+    margin: 0.5rem;
+  }
+
+  .Long {
+    width: 1.5rem;
+  }
+
+  .Short {
+    width: 0.75rem;
+  }
+
+  .Menu {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 25rem;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 10px;
+  }
+
+  .Tabs {
+    width: 0rem;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    flex-direction: column;
+  }
+
+  .Tabs > h1 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0rem;
+    color: white;
+  }
+}
