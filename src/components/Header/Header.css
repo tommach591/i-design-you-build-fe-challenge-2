@@ -100,14 +100,46 @@
     width: 0.75rem;
   }
 
+  @keyframes slidein {
+    from {
+      left: 30rem;
+    }
+    to {
+      left: 5.5rem;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      left: 5.5rem;
+    }
+    to {
+      left: 30rem;
+    }
+  }
+
   .Menu {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.95);
     position: absolute;
-    top: 25rem;
+    top: 7rem;
     height: 30rem;
     width: 20rem;
     border-radius: 10px;
+  }
+
+  .Menu[menuon="0"] {
+    left: 30rem;
+  }
+
+  .Menu[menuon="1"] {
+    left: 5.5rem;
+    animation: slidein 1s;
+  }
+
+  .Menu[menuon="2"] {
+    left: 30rem;
+    animation: slideout 1s;
   }
 
   .Tabs {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 
 function Header({ isMobile }) {
-  const [menuOn, setMenuOn] = useState(false);
+  const [menuOn, setMenuOn] = useState(0);
 
   function getMobile() {
     return (
@@ -11,7 +11,7 @@ function Header({ isMobile }) {
         <div
           className="Burger"
           onClick={() => {
-            setMenuOn(!menuOn);
+            menuOn === 1 ? setMenuOn(2) : setMenuOn(1);
           }}
         >
           <div>
@@ -20,8 +20,14 @@ function Header({ isMobile }) {
             <div className="Line Long" />
           </div>
         </div>
-        {menuOn ? (
-          <div className="Menu">
+        {menuOn !== 0 ? (
+          <div
+            className="Menu"
+            menuon={menuOn}
+            onAnimationEnd={() => {
+              if (menuOn !== 1) setMenuOn(0);
+            }}
+          >
             <div className="Tabs">
               <h1>Products</h1>
               <h1>About</h1>
